@@ -1,9 +1,16 @@
 @import '../../App.css';
 
+.navBar {
+	background-color: #705555;
+}
+
 .logo {
 	width: 6rem;
 }
 
+.hamMenu {
+	color: #fff;
+}
 /* links */
 
 a.nav-link {

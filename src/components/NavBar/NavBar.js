@@ -1,10 +1,13 @@
-import React from 'react';
+import React from 'react'
 import brand_logo from '../../utils/brand_logo.png'
 import s from './Navbar.module.css'
 import { NavLink } from 'react-router-dom'
+// import REACT-FONT-AWESOME items
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 const NavBar = () => (
-	<nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+	<nav className={`navbar navbar-expand-lg navbar-dark ${s.navBar}`}>
 		<div className="container">
 			<div className="container-fluid">
 				<NavLink className={`navbar-brand ${s.navBarBrand}`}
@@ -19,7 +22,7 @@ const NavBar = () => (
 					aria-controls="navbarSupportedContent"
 					aria-expanded="false"
 					aria-label="Toggle navigation">
-					<span className="navbar-toggler-icon"></span>
+					<FontAwesomeIcon icon={faBars} className={s.hamMenu}/>
 				</button>
 				<div
 					className="collapse navbar-collapse"
