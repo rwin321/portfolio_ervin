@@ -1,7 +1,9 @@
 @import '../../App.css';
 
 .navBar {
-	background-color: #705555;
+	background-color: #8e6868;
+	position: sticky;
+	z-index: 2;
 }
 
 .logo {
@@ -24,7 +26,7 @@ nav ul li {
 }
 
 .navBarBrand {
-	max-width: 9rem;
+	max-width: 9em;
 	padding: 0;
 	height: 6rem;
 }
@@ -33,7 +35,7 @@ nav ul li {
     margin-left: 0.75rem;
 	letter-spacing: 0.1rem;
     color: var(--primary-white) !important;
-	border-top: 0.1875rem solid var(--primary-dark);
+	border-top: 0.1875rem solid var(--prmary-invisable);
 	transition: 0.3s;
 }
 

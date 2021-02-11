@@ -1,0 +1,70 @@
+.homeWrapper {
+	position: relative;
+	background: url('../../utils/imgs/contacts_page_bg.jpg') no-repeat center;
+	background-size: cover;
+	height: 90vh;
+}
+
+.mainContent {
+	display: flex;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.text_block > h1 {
+	color: var(--primary-white);
+	font-family: "Garamond";
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+
+.typedText {
+	color: var(--primary-white);
+	font-size: 2rem;
+}
+
+.btnMainOfferContainer {
+	margin-top: 2em;
+	padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+}
+
+.btnMainOffer {
+	color: var(--primary-purple);
+	font-size: 2rem;
+	padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+}
+
+.btnMainOffer:hover {
+	background-color: var(--primary-white);
+	color: var(--primary-dark);
+	border: 1px solid var(--primary-dark);
+	transition: .4s ease-in-out;
+	border-radius: .3rem;
+}
+
+@media (max-width: 767px) {
+	.typedText,
+	.text_block > h1 {
+		font-size: 2rem;
+	}
+}
+
+@media (max-width: 599px) {
+	.typedText,
+	.text_block > h1 {
+		font-size: 1.25rem;
+	}
+}
+@media (max-width: 480px) {
+	.typedText,
+	.text_block > h1 {
+		font-size: 1rem;
+	}
+}

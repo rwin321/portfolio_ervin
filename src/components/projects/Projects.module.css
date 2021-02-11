@@ -1,0 +1,42 @@
+.projectsWrapper {
+	position: relative;
+	background: url('../../utils/imgs/home_page_bg.jpg') no-repeat center;
+	background-size: cover;
+	height: 90vh;
+}
+
+.headingTitleBlock {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.headingTitleBlock > h1  {
+	color: white;
+	font-size: 2.5rem;
+}
+
+.linksWrapper {
+	display: grid;
+	grid-template-columns: 4fr 4fr 4fr;
+	justify-content: center;
+	grid-gap: 1em;
+}
+
+.linksItem {
+	display: grid;
+	border: 3px solid var(--primary-white);
+	padding: 0.75em;
+}
+
+.projectsWrapper > div > a {
+	display: block;
+}
+
+@media (max-width: 776px) {
+	.linksWrapper {
+		grid-template-columns: 12fr;
+		grid-template-rows: 4fr 4fr 4fr;
+	}
+}

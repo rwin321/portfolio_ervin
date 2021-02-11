@@ -1,10 +1,10 @@
 import React from 'react'
-import brand_logo from '../../utils/brand_logo.png'
 import s from './Navbar.module.css'
-import { NavLink } from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
+import logo from '../../utils/imgs/brand_logo.png'
 // import REACT-FONT-AWESOME items
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faBars} from '@fortawesome/free-solid-svg-icons'
 
 const NavBar = () => (
 	<nav className={`navbar navbar-expand-lg navbar-dark ${s.navBar}`}>
@@ -12,7 +12,7 @@ const NavBar = () => (
 			<div className="container-fluid">
 				<NavLink className={`navbar-brand ${s.navBarBrand}`}
 				         to="/">
-					<img src={brand_logo} alt='logo img' className={s.logo}/>
+					<img src={logo} alt='logo img' className={s.logo}/>
 				</NavLink>
 				<button
 					className="navbar-toggler"
@@ -61,6 +61,6 @@ const NavBar = () => (
 			</div>
 		</div>
 	</nav>
-);
+)
 
 export default NavBar;
