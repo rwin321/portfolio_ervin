@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/portfolio_ervin/static/css/main.90200f24.chunk.css",
+    "main.js": "/portfolio_ervin/static/js/main.07934a1a.chunk.js",
+    "main.js.map": "/portfolio_ervin/static/js/main.07934a1a.chunk.js.map",
+    "runtime-main.js": "/portfolio_ervin/static/js/runtime-main.6cec6590.js",
+    "runtime-main.js.map": "/portfolio_ervin/static/js/runtime-main.6cec6590.js.map",
+    "static/css/2.150d169a.chunk.css": "/portfolio_ervin/static/css/2.150d169a.chunk.css",
+    "static/js/2.a99644a1.chunk.js": "/portfolio_ervin/static/js/2.a99644a1.chunk.js",
+    "static/js/2.a99644a1.chunk.js.map": "/portfolio_ervin/static/js/2.a99644a1.chunk.js.map",
+    "index.html": "/portfolio_ervin/index.html",
+    "static/css/2.150d169a.chunk.css.map": "/portfolio_ervin/static/css/2.150d169a.chunk.css.map",
+    "static/css/main.90200f24.chunk.css.map": "/portfolio_ervin/static/css/main.90200f24.chunk.css.map",
+    "static/js/2.a99644a1.chunk.js.LICENSE.txt": "/portfolio_ervin/static/js/2.a99644a1.chunk.js.LICENSE.txt",
+    "static/media/AboutMe.module.css": "/portfolio_ervin/static/media/about_me_page_bg.f05106e5.jpg",
+    "static/media/Home.module.css": "/portfolio_ervin/static/media/contacts_page_bg.827879cf.jpg",
+    "static/media/Projects.module.css": "/portfolio_ervin/static/media/home_page_bg.b7b18032.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6cec6590.js",
+    "static/css/2.150d169a.chunk.css",
+    "static/js/2.a99644a1.chunk.js",
+    "static/css/main.90200f24.chunk.css",
+    "static/js/main.07934a1a.chunk.js"
+  ]
+}
