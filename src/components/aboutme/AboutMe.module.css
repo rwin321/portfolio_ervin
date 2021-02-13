@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel&family=Nunito&display=swap');
+
+.wrapper {
+	position: relative;
+	height: 90vh;
+	background: url('../../utils/imgs/about_me_page_bg.jpg') no-repeat center;
+	background-size: cover;
+}
+
+.mainContent {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	font-size: calc(14px + (16 - 14) * ((100vw - 320px)/(1600 - 320)));
+	line-height: 150%;
+}
+
+.informationBlock {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 6em;
+}
+
+.informationBlock > section > h3 {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.smallInfo, .profSkills, .softSkills, .languages:hover {
+}
+.profSkills, .languages {
+	text-align: right;
+}
+
+.smallInfo, .softSkills {
+	text-align: left;
+}
+
+.softSkills {
+	border-top: 1px solid var(--primary-dark);
+	padding-top: 1em;
+}
+.profSkills {
+	border-bottom: 1px solid var(--primary-dark);
+}
+
+@media (max-width: 650px) {
+	.informationBlock {
+		grid-template-columns: 1fr;
+		grid-gap: 1.5em;
+	}
+	.smallInfo, .profSkills, .softSkills, .languages {
+		border: none;
+	}
+	.wrapper {
+		background: url('../../utils/imgs/about_me_page_bg.jpg') no-repeat top;
+	}
+}
+
+/*.mainContent > div > section, h1 {
+	padding-top: calc(20px + (50 - 20) * ((100vw - 320px)/(1600 - 320)));
+}*/
+
+.titleBlock {
+	font-family: 'Nunito';
+	text-transform: uppercase;
+}
+
+.title {
+	font-size: calc(14px + (30 - 15) * ((100vw - 320px)/(1200 - 320)));
+	margin-bottom: calc(10px + (20 - 10) * ((100vw - 320px)/(1600 - 320)));
+	border-bottom: 1px solid var(--primary-dark);
+}
+.subTitle {
+	font-size: calc(14px + (20 - 10) * ((100vw - 320px)/(1200 - 320)));
+	margin-bottom: calc(5px + (10 - 5) * ((100vw - 320px)/(1600 - 320)));
+}

@@ -1,12 +1,14 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
-import { links } from './components/common/links'
+import { links } from './common/links'
 import NavBar from "./components/navbar/NavBar"
 import Particles from "react-particles-js";
 import {Switch, Route} from "react-router-dom"
 import Home from "./components/home/Home";
 import Projects from "./components/projects/Projects";
+import AboutMe from "./components/aboutme/AboutMe";
+import Experience from "./components/experience/Experience";
 
 const App = () => {
 	return (
@@ -65,10 +67,10 @@ const App = () => {
 			<div className="wrapper__content">
 				<Switch>
 					<Route exact path='/' render={() => <Home/>}/>
-					<Route exact path='/aboutme' component={''}/>
-					<Route exact path='/experience' component={''}/>
+					<Route exact path='/aboutme' render={ () => <AboutMe />}/>
+					<Route exact path='/experience' render={ () => <Experience /> }/>
 					<Route exact path='/projects' render={ () => <Projects stopWatcher={links[0]} socialWeb={links[1]} /> }/>
-					<Route exact path='/contacts' component={''}/>
+					<Route exact path='/contacts' render={''}/>
 				</Switch>
 			</div>
 		</div>

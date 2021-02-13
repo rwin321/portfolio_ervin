@@ -23,6 +23,7 @@
 	font-family: "Garamond";
 	font-size: 2rem;
 	text-transform: uppercase;
+	text-shadow: 2px 1px 1px;
 }
 
 .typedText {
@@ -36,7 +37,7 @@
 }
 
 .btnMainOffer {
-	color: var(--primary-purple);
+	color: var(--primary-white);
 	font-size: 2rem;
 	padding: 0.625rem 0.75rem 0.75rem 0.75rem;
 }
@@ -44,7 +45,7 @@
 .btnMainOffer:hover {
 	background-color: var(--primary-white);
 	color: var(--primary-dark);
-	border: 1px solid var(--primary-dark);
+	border: 0 solid var(--prmary-invisable);
 	transition: .4s ease-in-out;
 	border-radius: .3rem;
 }
