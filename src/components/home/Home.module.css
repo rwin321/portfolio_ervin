@@ -1,8 +1,18 @@
 .homeWrapper {
 	position: relative;
-	background: url('../../utils/imgs/contacts_page_bg.jpg') no-repeat center;
-	background-size: cover;
 	height: 90vh;
+	margin-top: 10vh;
+}
+
+.homeWrapper::before {
+	content: '';
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: url('../../utils/imgs/bg_imgs/home_page_bg.jpg') no-repeat center;
+	background-size: cover;
 }
 
 .mainContent {
@@ -54,6 +64,9 @@
 	.typedText,
 	.text_block > h1 {
 		font-size: 2rem;
+	}
+	.homeWrapper::before {
+		background: url('../../utils/imgs/bg_imgs/home_page_bg.jpg') no-repeat left;
 	}
 }
 

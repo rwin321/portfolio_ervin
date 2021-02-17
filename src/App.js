@@ -4,12 +4,12 @@ import './App.css'
 import { links } from './common/links'
 import NavBar from "./components/navbar/NavBar"
 import Particles from "react-particles-js";
-import {Switch, Redirect, Route} from "react-router-dom"
+import {Switch, Route} from "react-router-dom"
 import Home from "./components/home/Home";
 import Projects from "./components/projects/Projects";
 import AboutMe from "./components/aboutme/AboutMe";
-import Experience from "./components/experience/Experience";
 import Preloader from "./components/Preloader/Preloader";
+import Contacts from "./components/contacts/Contacts";
 
 
 const App = () => {
@@ -24,6 +24,7 @@ const App = () => {
 		<>
 			{ loading === false ?
 				<div className='app-wrapper'>
+					<NavBar className='navbar__menu'/>
 					<Particles className='particles'
 					           params={{
 						           particles: {
@@ -73,18 +74,16 @@ const App = () => {
 								           enable: false
 							           }
 						           }
-					           }}/>
-					<NavBar className='navbar__menu'/>
+					           }}/>}>
 					<div className="wrapper__content">
 						<Switch>
-							<Route exact path='/'
-							       render={() => <Redirect to={'/home'} />} />
-							<Route path='/home' render={() => <Home/>}/>
+							{/*<Redirect exact from='/' to='/home' />*/}
+							<Route exact path='/' render={ () => <Home />} />
+							<Route path='/home' render={() => <Home/> }/>
 							<Route path='/aboutme' render={ () => <AboutMe />}/>
-							<Route path='/experience' render={ () => <Experience /> }/>
 							<Route path='/projects' render={ () => <Projects stopWatcher={links[0]}
-							                                                 socialWeb={links[1]} /> }/>
-							<Route path='/contacts' render={''}/>
+							                                                 socialWeb={links[1] } /> }/>
+							<Route path='/contacts' render={ () => <Contacts /> }/>
 						</Switch>
 					</div>
 				</div>

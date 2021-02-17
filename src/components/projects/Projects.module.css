@@ -1,42 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
 .projectsWrapper {
 	position: relative;
-	background: url('../../utils/imgs/home_page_bg.jpg') no-repeat center;
-	background-size: cover;
 	height: 90vh;
+	margin-top: 10vh;
+}
+.projectsWrapper::before {
+	content: '';
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: url('../../utils/imgs/bg_imgs/my_projects_bg.jpg') no-repeat center;
+	background-size: cover;
+}
+
+.mainContent {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
 }
 
 .headingTitleBlock {
+	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+	margin: 1em;
 }
 
 .headingTitleBlock > h1  {
-	color: white;
+	color: var(--primary-dark);
+	font-family:'Nunito', sans-serif;
 	font-size: 2.5rem;
 }
 
-.linksWrapper {
-	display: grid;
-	grid-template-columns: 4fr 4fr 4fr;
+.cards {
+	display: flex;
+	flex-direction: row;
 	justify-content: center;
-	grid-gap: 1em;
+	margin: 1em;
 }
 
-.linksItem {
-	display: grid;
-	border: 3px solid var(--primary-white);
-	padding: 0.75em;
+.card {
+	width: 17em;
+	margin: 3.5em;
+	border: 5px solid white;
 }
 
-.projectsWrapper > div > a {
-	display: block;
+.card > img {
+}
+
+.card:hover {
+	border: 5px solid var(--primary-orange);
+	box-shadow: 2px 2px 5px 2px;
+	transform: scale(1.1);
+	transition: .5s ease-out;
+}
+
+.card > div > h5 {
+	font-size: 1.2rem;
+	font-family: 'Noto Sans KR', sans-serif;
+	text-transform: uppercase;
+}
+.card > div > p {
+	font-size: calc(14px + (16 - 14) * ((100vw - 320px)/(1600 - 320)));
+}
+
+.socialWebTitle {
+	font-family: 'Garamond', sans-serif;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+}
+
+@media only screen  and (min-width : 1224px) {
+	.card > div > p{
+		font-size: 1.2rem;
+	}
 }
 
 @media (max-width: 776px) {
-	.linksWrapper {
-		grid-template-columns: 12fr;
-		grid-template-rows: 4fr 4fr 4fr;
+	.cards {
+		flex-direction: column;
+	}
+	.card {
+		width: 80vw;
+		margin: 1em;
+	}
+	.card > div > p {
+		display: none;
 	}
 }

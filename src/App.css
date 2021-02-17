@@ -42,6 +42,8 @@ aside {
 
 html,
 body {
+	margin: 0;
+	padding: 0;
 	height: 100%;
 	width: 100%;
 	line-height: 1;
@@ -50,6 +52,7 @@ body {
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
+	-webkit-box-sizing: border-box;
 }
 
 input,
@@ -110,6 +113,15 @@ h6 {
 	display: grid;
 	grid-area: c;
 }*/
+
+.app-wrapper {
+	position: relative;
+}
+
+.sticky_wrapper {
+	position: relative;
+	height: 10vh;
+}
 
 .tsparticles-canvas-el {
 	position: absolute;
