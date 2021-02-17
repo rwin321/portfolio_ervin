@@ -1,27 +1,30 @@
 {
   "files": {
-    "main.css": "/portfolio_ervin/static/css/main.5e478efc.chunk.css",
-    "main.js": "/portfolio_ervin/static/js/main.930fddd7.chunk.js",
-    "main.js.map": "/portfolio_ervin/static/js/main.930fddd7.chunk.js.map",
+    "main.css": "/portfolio_ervin/static/css/main.5d2e478e.chunk.css",
+    "main.js": "/portfolio_ervin/static/js/main.31982fc4.chunk.js",
+    "main.js.map": "/portfolio_ervin/static/js/main.31982fc4.chunk.js.map",
     "runtime-main.js": "/portfolio_ervin/static/js/runtime-main.6cec6590.js",
     "runtime-main.js.map": "/portfolio_ervin/static/js/runtime-main.6cec6590.js.map",
     "static/css/2.150d169a.chunk.css": "/portfolio_ervin/static/css/2.150d169a.chunk.css",
-    "static/js/2.5c8b745b.chunk.js": "/portfolio_ervin/static/js/2.5c8b745b.chunk.js",
-    "static/js/2.5c8b745b.chunk.js.map": "/portfolio_ervin/static/js/2.5c8b745b.chunk.js.map",
+    "static/js/2.733b01ec.chunk.js": "/portfolio_ervin/static/js/2.733b01ec.chunk.js",
+    "static/js/2.733b01ec.chunk.js.map": "/portfolio_ervin/static/js/2.733b01ec.chunk.js.map",
     "index.html": "/portfolio_ervin/index.html",
     "static/css/2.150d169a.chunk.css.map": "/portfolio_ervin/static/css/2.150d169a.chunk.css.map",
-    "static/css/main.5e478efc.chunk.css.map": "/portfolio_ervin/static/css/main.5e478efc.chunk.css.map",
-    "static/js/2.5c8b745b.chunk.js.LICENSE.txt": "/portfolio_ervin/static/js/2.5c8b745b.chunk.js.LICENSE.txt",
+    "static/css/main.5d2e478e.chunk.css.map": "/portfolio_ervin/static/css/main.5d2e478e.chunk.css.map",
+    "static/js/2.733b01ec.chunk.js.LICENSE.txt": "/portfolio_ervin/static/js/2.733b01ec.chunk.js.LICENSE.txt",
     "static/media/AboutMe.module.css": "/portfolio_ervin/static/media/about_me_page_bg.f05106e5.jpg",
-    "static/media/Home.module.css": "/portfolio_ervin/static/media/contacts_page_bg.827879cf.jpg",
-    "static/media/Projects.module.css": "/portfolio_ervin/static/media/home_page_bg.b7b18032.jpg",
-    "static/media/preloader.347b747a.svg": "/portfolio_ervin/static/media/preloader.347b747a.svg"
+    "static/media/Contacts.module.css": "/portfolio_ervin/static/media/contacts_page_bg.945a0ef9.jpg",
+    "static/media/Home.module.css": "/portfolio_ervin/static/media/home_page_bg.827879cf.jpg",
+    "static/media/Projects.module.css": "/portfolio_ervin/static/media/my_projects_bg.fd603c73.jpg",
+    "static/media/preloader.347b747a.svg": "/portfolio_ervin/static/media/preloader.347b747a.svg",
+    "static/media/prject_photo.64e91958.jpg": "/portfolio_ervin/static/media/prject_photo.64e91958.jpg",
+    "static/media/socail_web.1e2c549c.png": "/portfolio_ervin/static/media/socail_web.1e2c549c.png"
   },
   "entrypoints": [
     "static/js/runtime-main.6cec6590.js",
     "static/css/2.150d169a.chunk.css",
-    "static/js/2.5c8b745b.chunk.js",
-    "static/css/main.5e478efc.chunk.css",
-    "static/js/main.930fddd7.chunk.js"
+    "static/js/2.733b01ec.chunk.js",
+    "static/css/main.5d2e478e.chunk.css",
+    "static/js/main.31982fc4.chunk.js"
   ]
 }
