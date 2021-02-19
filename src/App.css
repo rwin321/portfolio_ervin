@@ -118,11 +118,6 @@ h6 {
 	position: relative;
 }
 
-.sticky_wrapper {
-	position: relative;
-	height: 10vh;
-}
-
 .tsparticles-canvas-el {
 	position: absolute;
 	height: 100vh;

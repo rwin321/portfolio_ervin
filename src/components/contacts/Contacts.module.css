@@ -1,7 +1,6 @@
 .wrapper {
 	position: relative;
 	height: 90vh;
-	margin-top: 10vh;
 }
 
 .wrapper::before {
@@ -13,7 +12,7 @@
 	left: 0;
 	background: url('../../utils/imgs/bg_imgs/contacts_page_bg.jpg') no-repeat center;
 	background-size: cover;
-	opacity: .5;
+	opacity: .7;
 }
 
 .mainContent {
@@ -28,7 +27,79 @@
 	left: 0;
 }
 
+.contactTitleContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 1em;
+}
+.contactTitleContainer > h1, h2 {
+	color: var(--primary-white);
+	text-transform: uppercase;
+	text-align: center;
+}
+.contactTitleContainer > h1 {
+	font-size: 2rem;
+}
+.contactTitleContainer > h2 {
+	color: var(--primary-white);
+	text-transform: uppercase;
+}
+
 .mainContent > .formContainer > form > .formGroup {
 	color: white;
 	font-size: 1.5rem;
+}
+
+.submitBtn {
+	width: 100%;
+}
+
+.success {
+	margin-top: .5em;
+	font-size: 2rem;
+	text-align: center;
+	background-color: #00ff41;
+	animation: status 4s ease forwards;
+}
+
+.unSuccess {
+	margin-top: .5em;
+	font-size: 2rem;
+	text-align: center;
+	background-color: #ff0000;
+	color: #ffffff;
+	animation: status 4s ease forwards;
+}
+
+@keyframes status {
+	0% {
+		opacity: 1;
+		pointer-events: all;
+	}
+	90% {
+		opacity: 1;
+		pointer-events: all;
+	}
+	100% {
+		opacity: 0;
+		pointer-events: none;
+	}
+}
+
+@media (max-width: 776px) {
+	.mainContent {
+		width: 80vw;
+	}
+	.formGroup > label:hover {
+		transform: scale(1.1);
+	}
+	.contactTitleContainer > h1 {
+		font-size: 1.5rem;
+		margin-bottom: 1em;
+	}
+	.contactTitleContainer > h2 {
+		font-size: 1rem;
+	}
 }

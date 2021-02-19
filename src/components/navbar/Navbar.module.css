@@ -1,15 +1,15 @@
 @import '../../App.css';
 
 .navBar {
-	position: fixed;
+	position: sticky;
 	top: 0;
-	left: 0;
-	right: 0;
-	width: 100vw;
-	height: 10vh;
-	background-color: #7f7f7f;
+	border: 1px solid black;
+	margin-bottom: 1em;
+	width: 100%;
+	min-height: 5.625em;
 	z-index: 2;
 }
+
 .logo {
 	margin-top: .6em;
 	width: 3.5em;

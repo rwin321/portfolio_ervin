@@ -1,12 +1,19 @@
-import React from 'react'
+import React, {useState} from 'react'
 import s from './Contacts.module.css'
+import ContactForm from "./ContactForm";
 
 const Contacts = () => {
+
 	return (
 		<div className={s.wrapper}>
 			<div className={`container ${s.mainContent}`}>
-				<div className={s.formContainer}>
-					<form action="#">
+				<div className={s.contactTitleContainer}>
+					<h1>Contact me for all needed information!</h1>
+					<h2>You will receive a feedback as soon as possible</h2>
+				</div>
+				<ContactForm />
+{/*				<div className={s.formContainer}>
+					<form id='form' action="https://formspree.io/f/mpzoeonr" method='POST'>
 						<div className={`form-group ${s.formGroup}`}>
 							<label htmlFor="firstName">First Name</label>
 							<input type="text" className={`form-control ${s.firstName}`} name='firstName'/>
@@ -25,7 +32,7 @@ const Contacts = () => {
 						</div>
 						<button type="submit" className={`btn btn-success ${s.submitBtn}`}>Send</button>
 					</form>
-				</div>
+				</div>*/}
 			</div>
 		</div>
 	)

@@ -4,7 +4,6 @@
 .projectsWrapper {
 	position: relative;
 	height: 90vh;
-	margin-top: 10vh;
 }
 .projectsWrapper::before {
 	content: '';
@@ -47,16 +46,17 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	text-align: center;
 	margin: 1em;
 }
 
 .card {
 	width: 17em;
 	margin: 3.5em;
-	border: 5px solid white;
+	padding: .5em;
 }
-
 .card > img {
+	border: .125em solid var(--primary-dark);
 }
 
 .card:hover {
@@ -92,7 +92,20 @@
 		flex-direction: column;
 	}
 	.card {
-		width: 80vw;
+		max-width: 80%;
+		margin: 1em;
+	}
+	.card > div > p {
+		display: none;
+	}
+}
+@media (max-width: 776px) {
+	.cards {
+		flex-direction: column;
+		align-items: center;
+	}
+	.card {
+		max-width: 80%;
 		margin: 1em;
 	}
 	.card > div > p {

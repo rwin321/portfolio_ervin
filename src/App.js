@@ -74,7 +74,7 @@ const App = () => {
 								           enable: false
 							           }
 						           }
-					           }}/>}>
+					           }}/>
 					<div className="wrapper__content">
 						<Switch>
 							{/*<Redirect exact from='/' to='/home' />*/}
