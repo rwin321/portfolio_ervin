@@ -29,6 +29,11 @@
 	line-height: 150%;
 }
 
+.subTitle {
+	color: var(--primary-dark);
+	text-align: left;
+}
+
 .informationBlock {
 	display: -ms-grid;
 	display: grid;
@@ -82,9 +87,6 @@
 		border: none;
 		font-size: 1.2rem;
 		line-height: 130%;
-	}
-	.subTitle {
-		color: var(--primary-dark);
 	}
 }
 

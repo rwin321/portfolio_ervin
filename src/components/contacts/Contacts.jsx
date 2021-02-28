@@ -11,8 +11,8 @@ const Contacts = () => {
 					<h1>Contact me for all needed information!</h1>
 					<h2>You will receive a feedback as soon as possible</h2>
 				</div>
-				<ContactForm />
-{/*				<div className={s.formContainer}>
+				<ContactForm/>
+				{/*				<div className={s.formContainer}>
 					<form id='form' action="https://formspree.io/f/mpzoeonr" method='POST'>
 						<div className={`form-group ${s.formGroup}`}>
 							<label htmlFor="firstName">First Name</label>

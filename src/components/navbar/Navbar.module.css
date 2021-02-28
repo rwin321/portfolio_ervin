@@ -3,8 +3,7 @@
 .navBar {
 	position: sticky;
 	top: 0;
-	border: 1px solid black;
-	margin-bottom: 1em;
+	background-color: #646d6d;
 	width: 100%;
 	min-height: 5.625em;
 	z-index: 2;
@@ -18,7 +17,7 @@
 .hamMenu {
 	color: #fff;
 }
-/* links */
+/* data */
 
 a.nav-link {
 	font-size: .8rem;

@@ -58,7 +58,10 @@ const AboutMe = () => {
 						ContainerClassName='ScrollUpButton__Container'
 						TransitionClassName='ScrollUpButton__Toggled'
 						style={{}}
-						ToggledStyle={{}}
+						ToggledStyle={{
+							opacity: "0.3",
+							float: "left"
+						}}
 					/>
 				</div>
 			</div>

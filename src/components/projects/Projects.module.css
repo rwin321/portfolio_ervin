@@ -45,18 +45,17 @@
 .cards {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: space-around;
 	text-align: center;
 	margin: 1em;
 }
 
 .card {
 	width: 17em;
-	margin: 3.5em;
 	padding: .5em;
 }
 .card > img {
-	border: .125em solid var(--primary-dark);
+	border-bottom: .125em solid var(--primary-dark);
 }
 
 .card:hover {

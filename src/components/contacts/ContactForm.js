@@ -30,7 +30,7 @@ const ContactForm = () => {
 	return (
 		<div className={s.formContainer}>
 			<form onSubmit={submitForm}
-			      action="https://formspree.io/f/mpeonr"
+			      action="https://formspree.io/f/mpzoeonr"
 			      method='POST'>
 				<div className={`form-group ${s.formGroup}`}>
 					<label htmlFor="firstName">First Name</label>

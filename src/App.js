@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
-import { links } from './common/links'
+import { data } from './common/data'
 import NavBar from "./components/navbar/NavBar"
 import Particles from "react-particles-js";
 import {Switch, Route} from "react-router-dom"
@@ -77,12 +77,10 @@ const App = () => {
 					           }}/>
 					<div className="wrapper__content">
 						<Switch>
-							{/*<Redirect exact from='/' to='/home' />*/}
 							<Route exact path='/' render={ () => <Home />} />
 							<Route path='/home' render={() => <Home/> }/>
 							<Route path='/aboutme' render={ () => <AboutMe />}/>
-							<Route path='/projects' render={ () => <Projects stopWatcher={links[0]}
-							                                                 socialWeb={links[1] } /> }/>
+							<Route path='/projects' render={ () => <Projects data={data.projects} /> }/>
 							<Route path='/contacts' render={ () => <Contacts /> }/>
 						</Switch>
 					</div>
